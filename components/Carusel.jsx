@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import {
   View,
   Text,
@@ -14,8 +14,8 @@ const Carulsel = () => {
     "https://images.unsplash.com/photo-1693724315464-781ede3a4767?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
     "https://images.unsplash.com/photo-1692789183372-1b4b9f73a5ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDU1fHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
     "https://images.unsplash.com/photo-1693835843843-82f691094f59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDV8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1561505445-3d89277edf4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1688302231150-f1d390ac872f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3OHx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+    // "https://images.unsplash.com/photo-1561505445-3d89277edf4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+    // "https://images.unsplash.com/photo-1688302231150-f1d390ac872f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3OHx0b3dKWkZza3BHZ3x8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
   ];
 
   const witdh = Dimensions.get("window").width;
@@ -23,6 +23,7 @@ const Carulsel = () => {
   const ANCHO_CONTENEDOR = witdh * 0.7;
   const ESPACIO = 10;
   const scrollX = useRef(new Animated.Value(0)).current;
+
   return (
     <View style={{ flex: 1 }}>
       <Animated.FlatList
@@ -37,11 +38,11 @@ const Carulsel = () => {
         horizontal
         showsHorizontalScrollIndicator={false}
         decelerationRate={0}
-        snapToInterval={ANCHO_CONTENEDOR}
+        snapToInterval={288}
         data={images}
         keyExtractor={(item) => item}
-        estimatedItemSize={200}
-        scrollEventThrottle={16}
+        // estimatedItemSize={200}
+        // scrollEventThrottle={16}
         renderItem={({ item, index }) => {
           const inputRange = [
             (index - 1) * ANCHO_CONTENEDOR,
@@ -73,7 +74,8 @@ const Carulsel = () => {
               >
                 <Image style={styles.posterImage} source={{ uri: item }} />
                 <Text style={{ fontWeight: "bold" }}>
-                  {index + 1} Violence Of his Rimets123
+                  {}
+                  {index + 1} Violence Of his Rimets
                 </Text>
                 <Text style={{ color: "gray" }}>
                   {index + 1} Violence 201 - album
