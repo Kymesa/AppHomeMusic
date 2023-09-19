@@ -5,22 +5,9 @@ import { Icon } from "react-native-magnus";
 const Trends = () => {
   return (
     <SafeAreaView>
-      {/* <Tabs.Screen
-        options={{
-          title: "Trends",
-          tabBarIcon: () => (
-            <Icon
-              name="local-fire-department"
-              fontFamily="MaterialIcons"
-              fontSize={32}
-              color="black"
-              h={40}
-              w={40}
-              rounded="md"
-            />
-          ),
-        }}
-      /> */}
+      <View>
+        <Text>Trends</Text>
+      </View>
     </SafeAreaView>
   );
 };

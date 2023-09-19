@@ -5,22 +5,9 @@ import { Icon } from "react-native-magnus";
 const MyMusic = () => {
   return (
     <SafeAreaView>
-      {/* <Tabs.Screen
-        options={{
-          title: "My Music",
-          tabBarIcon: () => (
-            <Icon
-              name="music"
-              fontFamily="FontAwesome"
-              fontSize={32}
-              color="black"
-              h={40}
-              w={40}
-              rounded="md"
-            />
-          ),
-        }}
-      /> */}
+      <View>
+        <Text>My Music</Text>
+      </View>
     </SafeAreaView>
   );
 };

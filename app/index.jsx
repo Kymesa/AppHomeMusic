@@ -41,12 +41,8 @@ const index = () => {
           />
         </View>
 
-        <View style={{ marginTop: 20 }}>
-          <Carulsel />
-          <View style={{ marginTop: 1 }}>
-            <Played />
-          </View>
-        </View>
+        <Carulsel />
+        <Played />
       </ScrollView>
     </SafeAreaView>
   );
