@@ -1,10 +1,4 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  TouchableOpacity,
-  ScrollView,
-} from "react-native";
+import { View, Text, SafeAreaView, ScrollView } from "react-native";
 import { Tabs } from "expo-router/tabs";
 import { Icon } from "react-native-magnus";
 import { BtnHeaderScreen } from "../components/BtnHeaderScreen";

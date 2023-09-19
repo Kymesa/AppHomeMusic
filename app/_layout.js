@@ -1,5 +1,4 @@
 import { Tabs } from "expo-router/tabs";
-import { Text, View } from "react-native";
 import { Icon } from "react-native-magnus";
 
 export default function AppLayout() {
