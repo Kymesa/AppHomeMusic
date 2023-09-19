@@ -17,8 +17,7 @@ const index = () => {
         <View style={{ paddingHorizontal: 100, marginHorizontal: 100 }}>
           <Tabs.Screen
             options={{
-              headerTitle: "App",
-              title: "App",
+              title: "Home",
               headerLeft: () => <BtnHeaderScreen name="cog" />,
               headerRight: () => <BtnHeaderScreen name="search" />,
               tabBarLabel: "Home",
