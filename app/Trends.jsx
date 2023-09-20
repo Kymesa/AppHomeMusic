@@ -1,13 +1,10 @@
-import { View, Text, SafeAreaView } from "react-native";
+import { View, Text } from "react-native";
+import React from "react";
 
-const Trends = () => {
+export default function Trends() {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Trends</Text>
-      </View>
-    </SafeAreaView>
+    <View>
+      <Text>Trends</Text>
+    </View>
   );
-};
-
-export default Trends;
+}

@@ -1,13 +1,10 @@
-import { View, Text, SafeAreaView } from "react-native";
+import { View, Text } from "react-native";
+import React from "react";
 
-const Menu = () => {
+export default function Menu() {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Menu</Text>
-      </View>
-    </SafeAreaView>
+    <View>
+      <Text>Menu</Text>
+    </View>
   );
-};
-
-export default Menu;
+}

@@ -1,13 +1,10 @@
-import { View, Text, SafeAreaView } from "react-native";
+import { View, Text } from "react-native";
+import React from "react";
 
-const MyMusic = () => {
+export default function MyMusic() {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>My Music</Text>
-      </View>
-    </SafeAreaView>
+    <View>
+      <Text>MyMusic</Text>
+    </View>
   );
-};
-
-export default MyMusic;
+}

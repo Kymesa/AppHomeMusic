@@ -1,5 +1,6 @@
 import { Tabs } from "expo-router/tabs";
 import { Icon } from "react-native-magnus";
+import { BtnHeaderScreen } from "../components/BtnHeaderScreen";
 
 export default function AppLayout() {
   return (
@@ -10,7 +11,30 @@ export default function AppLayout() {
         },
       }}
     >
-      <Tabs.Screen name="index" />
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+          headerLeft: () => <BtnHeaderScreen name="cog" />,
+          headerRight: () => <BtnHeaderScreen name="search" />,
+          tabBarLabel: "Home",
+          headerTitleAlign: "center",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+          tabBarIcon: () => (
+            <Icon
+              name="home"
+              fontFamily="Entypo"
+              fontSize={32}
+              color="pink600"
+              h={40}
+              w={40}
+              rounded="md"
+            />
+          ),
+        }}
+      />
       <Tabs.Screen
         name="Trends"
         options={{
