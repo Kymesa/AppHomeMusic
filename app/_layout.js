@@ -14,6 +14,7 @@ export default function AppLayout() {
       <Tabs.Screen
         name="index"
         options={{
+          headerShadowVisible: false,
           title: "Home",
           headerLeft: () => <BtnHeaderScreen name="cog" />,
           headerRight: () => <BtnHeaderScreen name="search" />,
